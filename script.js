@@ -10,12 +10,26 @@
 
 window.addEventListener("scroll", () => {
   if(window.scrollY > 0){
-    navbar.style.height = "50px";
+    navbar.style.height = "40px";
   } else {
     navbar.style.height = "90px";
   }
-  if(window.scrollY > 280){
+  if(window.scrollY > 250){
     imgImprovise.style.opacity = 1;
-    imgImprovise.style.transformTranslateX = "200px";
+    imgImprovise.style.transform = "translate(0px)";
+  } else {
+    imgImprovise.style.opacity = 0;
+    imgImprovise.style.transformTranslateX = "-200px";
   }
+  if(window.scrollY > 750) {
+    popup.style.opacity = 1;
+    popup.style.transform = "translate(0px)";
+  } else {
+    popup.style.opacity = 0;
+    popup.style.transform = "translate(400px)";
+  }
+})
+
+window.addEventListener("click", () => {
+  closeBtn.remove()
 })
