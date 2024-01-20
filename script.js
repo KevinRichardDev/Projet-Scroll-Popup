@@ -8,6 +8,8 @@
 
 // Bonus : quand on clicke sur la popup elle disparait pour toujours
 
+const popUp = document.querySelector(".pop-up");
+
 window.addEventListener("scroll", () => {
   if(window.scrollY > 0){
     navbar.style.height = "40px";
@@ -16,7 +18,7 @@ window.addEventListener("scroll", () => {
   }
   if(window.scrollY > 250){
     imgImprovise.style.opacity = 1;
-    imgImprovise.style.transform = "translate(0px)";
+    imgImprovise.style.transform = "translate(-50px)";
   } else {
     imgImprovise.style.opacity = 0;
     imgImprovise.style.transformTranslateX = "-200px";
@@ -30,6 +32,8 @@ window.addEventListener("scroll", () => {
   }
 })
 
-window.addEventListener("click", () => {
-  closeBtn.remove()
+popUp.addEventListener("click", () => {
+  if(closeBtn = "click") {
+    popUp.remove()
+  }
 })
