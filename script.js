@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
     imgImprovise.style.opacity = 0;
     imgImprovise.style.transformTranslateX = "-200px";
   }
-  if(window.scrollY > 750) {
+  if(window.scrollY > 900) {
     popup.style.opacity = 1;
     popup.style.transform = "translate(0px)";
   } else {
