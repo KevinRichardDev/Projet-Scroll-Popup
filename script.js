@@ -44,4 +44,18 @@ window.addEventListener("scroll", () => {
   } else {
     navbar.style.height = "90px";
   }
+
+  let scrollValue = (window.scrollY + window.innerHeight) / document.body.offsetHeight
+  
+  // Image
+  if(scrollValue > 0.45) {
+    imgImprovise.style.opacity = 1;
+    imgImprovise.style.transform = "none"
+  }
+
+  //Popup
+  if(scrollValue > 0.85) {
+    popup.style.opacity = 1;
+    popup.style.transform = "none"
+  }
 })
