@@ -8,32 +8,40 @@
 
 // Bonus : quand on clicke sur la popup elle disparait pour toujours
 
-const popUp = document.querySelector(".pop-up");
+// window.addEventListener("scroll", () => {
+//   if(window.scrollY > 0){
+//     navbar.style.height = "30px";
+//   } else {
+//     navbar.style.height = "90px";
+//   }
+//   if(window.scrollY > 250){
+//     imgImprovise.style.opacity = 1;
+//     imgImprovise.style.transform = "translate(-50px)";
+//   } else {
+//     imgImprovise.style.opacity = 0;
+//     imgImprovise.style.transformTranslateX = "-200px";
+//   }
+//   if(window.scrollY > 900) {
+//     popup.style.opacity = 1;
+//     popup.style.transform = "translate(0px)";
+//   } else {
+//     popup.style.opacity = 0;
+//     popup.style.transform = "translate(400px)";
+//   }
+// })
+
+// popup.addEventListener("click", () => {
+//   popup.remove()
+// })
+
+
+// CORRECTION
 
 window.addEventListener("scroll", () => {
-  if(window.scrollY > 0){
-    navbar.style.height = "40px";
+  // Navbar effect
+  if(window.scrollY > 50){
+    navbar.style.height = "45px";
   } else {
     navbar.style.height = "90px";
-  }
-  if(window.scrollY > 250){
-    imgImprovise.style.opacity = 1;
-    imgImprovise.style.transform = "translate(-50px)";
-  } else {
-    imgImprovise.style.opacity = 0;
-    imgImprovise.style.transformTranslateX = "-200px";
-  }
-  if(window.scrollY > 900) {
-    popup.style.opacity = 1;
-    popup.style.transform = "translate(0px)";
-  } else {
-    popup.style.opacity = 0;
-    popup.style.transform = "translate(400px)";
-  }
-})
-
-popUp.addEventListener("click", () => {
-  if(closeBtn = "click") {
-    popUp.remove()
   }
 })
